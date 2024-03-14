@@ -1,5 +1,5 @@
 import os
 import webbrowser
 
-webbrowser.open('http://localhost:6900')
-os.system('php -S localhost:6900')
+webbrowser.open('http://localhost:8888')
+os.system('php -S 0.0.0.0:8888')
