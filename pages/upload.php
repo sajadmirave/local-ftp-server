@@ -20,6 +20,9 @@
     </form>
 
     <?php
+    ini_set('upload_max_filesize', '200MG');
+    ini_set('post_max_size', '200M');
+
     if (isset ($_POST['submit'])) {
         if (isset ($_FILES['file'])) {
             $file = $_FILES['file'];
@@ -34,8 +37,9 @@
                 move_uploaded_file($fileTmpName, $fileDestination);
                 echo "File uploaded successfully.";
             } else {
-                echo "Error uploading file.";
+                echo "Error uploading file. Error code: $fileError";
             }
+            
         } else {
             echo "No file chosen.";
         }
