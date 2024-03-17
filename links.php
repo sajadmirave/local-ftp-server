@@ -39,6 +39,12 @@
         .box a {
             margin: 20px;
         }
+
+        @media screen and (max-width: 400px) {
+            .box{
+                width: 300px;
+            }
+    }
     </style>
 </head>
 
