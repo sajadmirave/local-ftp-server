@@ -50,6 +50,7 @@
     <div style="display:flex;">
         <a href="./links.php" style="margin-right:10px;">download links</a>
         <a href="./setting.php">setting</a>
+        <a href="./pages/chat.php"  style="margin-left:10px;">chat</a>
     </div>
 
 
