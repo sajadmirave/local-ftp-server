@@ -7,6 +7,12 @@
     <title>Chat</title>
 
     <link rel="stylesheet" href="../main-style.css">
+
+    <style>
+        #msg_box{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +36,7 @@
         $message = $_REQUEST['message'];
 
         $chatFile = fopen('../chat.txt', 'a');
-        fwrite($chatFile, $message . PHP_EOL);
+        fwrite($chatFile, $message . PHP_EOL . '--------------------------------------' . PHP_EOL);
         fclose($chatFile);
     }
 
